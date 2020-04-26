@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoInterFront.View;
 
 namespace ProjetoInterFront
 {
@@ -58,7 +59,10 @@ namespace ProjetoInterFront
             statusPass.Text = "";
             if (textBoxUser.Text == user && textBoxPassword.Text == password)
             {
-                MessageBox.Show("Parabens");
+                Home home = new Home(this);
+                this.Hide();
+                home.Closed += (s, args) => this.Close();
+                home.Show();
             }
             if (textBoxUser.Text != user)
             {
@@ -82,7 +86,7 @@ namespace ProjetoInterFront
         private void Registrar_Click(object sender, EventArgs e)
         {
             CreateUser create = new CreateUser(this);
-            create.Show();
+            create.ShowDialog();
         }
 
         private void buttonEmail_Click(object sender, EventArgs e)

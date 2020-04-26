@@ -9,3 +9,4 @@ C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.csproj.CoreCompileInputs.cache
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.exe
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.pdb
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.View.Home.resources
