@@ -8,3 +8,14 @@ C:\Users\gabri\OneDrive\Documentos\ProjInter\ProjetoInterFrom\ProjetoInterFrom\b
 C:\Users\gabri\OneDrive\Documentos\ProjInter\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.exe
 C:\Users\gabri\OneDrive\Documentos\ProjInter\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.pdb
 C:\Users\gabri\OneDrive\Documentos\ProjInter\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.Login.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin\Debug\ProjetoInterFrom.exe.config
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin\Debug\ProjetoInterFrom.exe
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin\Debug\ProjetoInterFrom.pdb
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.csprojAssemblyReference.cache
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.CreateUser.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.Login.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.Properties.Resources.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.csproj.GenerateResource.cache
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.exe
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.pdb

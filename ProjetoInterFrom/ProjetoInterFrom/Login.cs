@@ -81,7 +81,8 @@ namespace ProjetoInterFront
 
         private void Registrar_Click(object sender, EventArgs e)
         {
-
+            CreateUser create = new CreateUser(this);
+            create.Show();
         }
 
         private void buttonEmail_Click(object sender, EventArgs e)
