@@ -13,10 +13,27 @@ namespace ProjetoInterFront
     public partial class CreateUser : Form
     {
         Login login;
+        int X = 0;
+        int Y = 0;
         public CreateUser(Login value)
         {
             InitializeComponent();
+            this.MouseDown += new MouseEventHandler(Form3_MouseDown);
+            this.MouseMove += new MouseEventHandler(Form3_MouseMove);
             login = value;
+        }
+        private void Form3_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            X = this.Left - MousePosition.X;
+            Y = this.Top - MousePosition.Y;
+        }
+
+        private void Form3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            this.Left = X + MousePosition.X;
+            this.Top = Y + MousePosition.Y;
         }
 
         private void Exit_Click(object sender, EventArgs e)
