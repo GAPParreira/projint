@@ -37,7 +37,7 @@ namespace ProjetoInterFront.View
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

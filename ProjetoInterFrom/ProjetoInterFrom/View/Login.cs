@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProjetoInterFront.View;
+using ProjetoInterFrom.View;
 
 namespace ProjetoInterFront
 {
@@ -43,7 +44,7 @@ namespace ProjetoInterFront
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
 
@@ -59,7 +60,7 @@ namespace ProjetoInterFront
             statusPass.Text = "";
             if (textBoxUser.Text == user && textBoxPassword.Text == password)
             {
-                Home home = new Home(this);
+                Home2 home = new Home2(this);
                 this.Hide();
                 home.Closed += (s, args) => this.Close();
                 home.Show();
