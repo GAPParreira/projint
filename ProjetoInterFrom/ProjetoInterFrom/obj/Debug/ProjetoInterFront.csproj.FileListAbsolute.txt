@@ -9,3 +9,8 @@ C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.csproj.CoreCompileInputs.cache
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.exe
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.pdb
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.View.Home.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.View.Home2.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.csproj.CopyComplete
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.View.FormsHome.PaginaPrincipal.resources

@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoInterFront.View;
 
 namespace ProjetoInterFront
 {
     public partial class CreateUser : Form
     {
-        Login login;
         int X = 0;
         int Y = 0;
         public CreateUser(Login value)
@@ -20,7 +20,6 @@ namespace ProjetoInterFront
             InitializeComponent();
             this.MouseDown += new MouseEventHandler(Form3_MouseDown);
             this.MouseMove += new MouseEventHandler(Form3_MouseMove);
-            login = value;
         }
         private void Form3_MouseDown(object sender, MouseEventArgs e)
         {
