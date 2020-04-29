@@ -101,11 +101,13 @@ namespace ProjetoInterFrom.View
         private void iconButtonPerfil_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RBGColors.color1);
+            OpenChildForm(new PerfilForm());
         }
 
         private void iconButtonShop_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RBGColors.color1);
+            OpenChildForm(new ShopForm());
         }
 
         private void iconButtonHistorico_Click(object sender, EventArgs e)
@@ -170,6 +172,11 @@ namespace ProjetoInterFrom.View
         private void bntMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

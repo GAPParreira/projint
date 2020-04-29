@@ -14,3 +14,5 @@ C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.View.Home2.resources
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFront.csproj.CopyComplete
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.View.FormsHome.PaginaPrincipal.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.View.FormsHome.PerfilForm.resources
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.View.FormsHome.ShopForm.resources
