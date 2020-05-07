@@ -32,12 +32,12 @@
             this.labelDateInitial = new System.Windows.Forms.Label();
             this.labelDateEnd = new System.Windows.Forms.Label();
             this.labelFormatDate = new System.Windows.Forms.Label();
-            this.textBoxDateInitial = new System.Windows.Forms.TextBox();
-            this.textBoxDateEnd = new System.Windows.Forms.TextBox();
             this.labelDias = new System.Windows.Forms.Label();
             this.labelPagar = new System.Windows.Forms.Label();
             this.iconButtonAlugar = new FontAwesome.Sharp.IconButton();
             this.iconButtonConsultar = new FontAwesome.Sharp.IconButton();
+            this.dateTimePickerInicial = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerFinal = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // checkBoxConfirmed
@@ -80,22 +80,6 @@
             this.labelFormatDate.Size = new System.Drawing.Size(312, 20);
             this.labelFormatDate.TabIndex = 1;
             this.labelFormatDate.Text = "Formato da data: dd/mm/aaaa hh:mm:ss";
-            // 
-            // textBoxDateInitial
-            // 
-            this.textBoxDateInitial.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDateInitial.Location = new System.Drawing.Point(203, 84);
-            this.textBoxDateInitial.Name = "textBoxDateInitial";
-            this.textBoxDateInitial.Size = new System.Drawing.Size(260, 26);
-            this.textBoxDateInitial.TabIndex = 2;
-            // 
-            // textBoxDateEnd
-            // 
-            this.textBoxDateEnd.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDateEnd.Location = new System.Drawing.Point(203, 124);
-            this.textBoxDateEnd.Name = "textBoxDateEnd";
-            this.textBoxDateEnd.Size = new System.Drawing.Size(260, 26);
-            this.textBoxDateEnd.TabIndex = 2;
             // 
             // labelDias
             // 
@@ -155,25 +139,45 @@
             this.iconButtonConsultar.UseVisualStyleBackColor = false;
             this.iconButtonConsultar.Click += new System.EventHandler(this.iconButtonConsultar_Click);
             // 
+            // dateTimePickerInicial
+            // 
+            this.dateTimePickerInicial.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dateTimePickerInicial.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerInicial.Location = new System.Drawing.Point(203, 82);
+            this.dateTimePickerInicial.Name = "dateTimePickerInicial";
+            this.dateTimePickerInicial.Size = new System.Drawing.Size(260, 26);
+            this.dateTimePickerInicial.TabIndex = 5;
+            // 
+            // dateTimePickerFinal
+            // 
+            this.dateTimePickerFinal.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dateTimePickerFinal.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerFinal.Location = new System.Drawing.Point(203, 122);
+            this.dateTimePickerFinal.Name = "dateTimePickerFinal";
+            this.dateTimePickerFinal.Size = new System.Drawing.Size(260, 26);
+            this.dateTimePickerFinal.TabIndex = 5;
+            // 
             // ShopForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(493, 448);
+            this.Controls.Add(this.dateTimePickerFinal);
+            this.Controls.Add(this.dateTimePickerInicial);
             this.Controls.Add(this.iconButtonConsultar);
             this.Controls.Add(this.iconButtonAlugar);
             this.Controls.Add(this.labelPagar);
             this.Controls.Add(this.labelDias);
-            this.Controls.Add(this.textBoxDateEnd);
-            this.Controls.Add(this.textBoxDateInitial);
             this.Controls.Add(this.labelFormatDate);
             this.Controls.Add(this.labelDateEnd);
             this.Controls.Add(this.labelDateInitial);
             this.Controls.Add(this.checkBoxConfirmed);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShopForm";
-            this.Text = "ShopForm";
+            this.Text = "Shop";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,11 +189,11 @@
         private System.Windows.Forms.Label labelDateInitial;
         private System.Windows.Forms.Label labelDateEnd;
         private System.Windows.Forms.Label labelFormatDate;
-        private System.Windows.Forms.TextBox textBoxDateInitial;
-        private System.Windows.Forms.TextBox textBoxDateEnd;
         private System.Windows.Forms.Label labelDias;
         private System.Windows.Forms.Label labelPagar;
         private FontAwesome.Sharp.IconButton iconButtonAlugar;
         private FontAwesome.Sharp.IconButton iconButtonConsultar;
+        private System.Windows.Forms.DateTimePicker dateTimePickerInicial;
+        private System.Windows.Forms.DateTimePicker dateTimePickerFinal;
     }
 }

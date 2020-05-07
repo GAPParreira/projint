@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Aluguel.cs" />
     <Compile Include="Model\Pessoa.cs" />
     <Compile Include="View\CreateUser.cs">
       <SubType>Form</SubType>
@@ -92,12 +93,6 @@
     <Compile Include="View\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Home2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Home2.Designer.cs">
-      <DependentUpon>Home2.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +104,9 @@
     <EmbeddedResource Include="View\CreateUser.resx">
       <DependentUpon>CreateUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormsHome\HistoricoForm.resx">
+      <DependentUpon>HistoricoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormsHome\PaginaPrincipal.resx">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,11 +116,11 @@
     <EmbeddedResource Include="View\FormsHome\ShopForm.resx">
       <DependentUpon>ShopForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormsHome\StatusForm.resx">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Home2.resx">
-      <DependentUpon>Home2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -28,14 +28,14 @@ namespace ProjetoInterFrom.View.FormsHome
         {
             if(checkBoxConfirmed.Checked == true && consultaValidacao == true)
             {
-                Start = Convert.ToDateTime(textBoxDateInitial.Text);
-                End = Convert.ToDateTime(textBoxDateEnd.Text);
+                Start = Convert.ToDateTime(dateTimePickerInicial.Text);
+                End = Convert.ToDateTime(dateTimePickerFinal.Text);
                 if(Start < End) 
                 {
                     TimeSpan date = End.Subtract(Start);
                     double totalHours = date.TotalHours;
                     double PagarT = totalHours * precoHour;
-                    MessageBox.Show("Preco do aluguel ficou em: " + totalHours + " Horas por " + PagarT + " Reais");
+                    MessageBox.Show("Preco do aluguel ficou em: " + totalHours.ToString("F2") + " Horas por " + PagarT.ToString("F2") + " Reais");
                     consultaValidacao = false;
                 }
                 else
@@ -55,15 +55,16 @@ namespace ProjetoInterFrom.View.FormsHome
 
         private void iconButtonConsultar_Click(object sender, EventArgs e)
         {
-            Start = Convert.ToDateTime(textBoxDateInitial.Text);
-            End = Convert.ToDateTime(textBoxDateEnd.Text);
+            Start = Convert.ToDateTime(dateTimePickerInicial.Text);
+            End = Convert.ToDateTime(dateTimePickerFinal.Text);
             if(Start < End)
-            {
+            {                
                 TimeSpan date = End.Subtract(Start);
                 double totalHours = date.TotalHours;
+                totalHours = Math.Ceiling(totalHours);
                 double PagarT = totalHours * precoHour;
-                labelDias.Text = Convert.ToString(totalHours + " Horas");
-                labelPagar.Text = Convert.ToString(PagarT + " Reais");
+                labelDias.Text = Convert.ToString(totalHours.ToString("F0") + " Horas");
+                labelPagar.Text = Convert.ToString(PagarT.ToString("F2") + " Reais");
                 consultaValidacao = true;
             }
             else
