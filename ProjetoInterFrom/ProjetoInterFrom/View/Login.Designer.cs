@@ -146,9 +146,12 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(185, 168);
+            this.textBoxPassword.MaxLength = 16;
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(198, 26);
             this.textBoxPassword.TabIndex = 4;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // labelNTemConta
             // 

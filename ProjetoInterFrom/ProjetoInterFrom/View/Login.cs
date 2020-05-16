@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProjetoInterFront.View;
 using ProjetoInterFrom.View;
 
 namespace ProjetoInterFront
@@ -60,7 +59,7 @@ namespace ProjetoInterFront
             statusPass.Text = "";
             if (textBoxUser.Text == user && textBoxPassword.Text == password)
             {
-                Home2 home = new Home2(this);
+                Home home = new Home(this);
                 this.Hide();
                 home.Closed += (s, args) => this.Close();
                 home.Show();
@@ -97,6 +96,11 @@ namespace ProjetoInterFront
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
 
         }

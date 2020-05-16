@@ -1,4 +1,4 @@
-﻿namespace ProjetoInterFront.View
+﻿namespace ProjetoInterFrom.View
 {
     partial class Home
     {
@@ -29,267 +29,380 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            this.pictureBoxFtPerfil = new System.Windows.Forms.PictureBox();
-            this.Exit = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.buttonPageHome = new System.Windows.Forms.Button();
-            this.buttonPerfil = new System.Windows.Forms.Button();
-            this.buttonShop = new System.Windows.Forms.Button();
-            this.buttonHistorico = new System.Windows.Forms.Button();
-            this.buttonDelogar = new System.Windows.Forms.Button();
-            this.labelName = new System.Windows.Forms.Label();
-            this.labelCPF = new System.Windows.Forms.Label();
-            this.labelEnd = new System.Windows.Forms.Label();
-            this.labelTel = new System.Windows.Forms.Label();
-            this.buttonIA = new System.Windows.Forms.Button();
-            this.buttonStatus = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFtPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButtonIA = new FontAwesome.Sharp.IconButton();
+            this.iconButtonLogout = new FontAwesome.Sharp.IconButton();
+            this.iconButtonStatus = new FontAwesome.Sharp.IconButton();
+            this.iconButtonHistorico = new FontAwesome.Sharp.IconButton();
+            this.iconButtonShop = new FontAwesome.Sharp.IconButton();
+            this.iconButtonPerfil = new FontAwesome.Sharp.IconButton();
+            this.iconButtonPrincipal = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.BntHome = new System.Windows.Forms.PictureBox();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.bntMinimize = new FontAwesome.Sharp.IconButton();
+            this.btnMaximize = new FontAwesome.Sharp.IconButton();
+            this.BntExit = new FontAwesome.Sharp.IconButton();
+            this.lblTitleChildFrom = new System.Windows.Forms.Label();
+            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panelMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BntHome)).BeginInit();
+            this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBoxFtPerfil
+            // panelMenu
             // 
-            this.pictureBoxFtPerfil.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFtPerfil.Image")));
-            this.pictureBoxFtPerfil.Location = new System.Drawing.Point(0, -1);
-            this.pictureBoxFtPerfil.Name = "pictureBoxFtPerfil";
-            this.pictureBoxFtPerfil.Size = new System.Drawing.Size(99, 82);
-            this.pictureBoxFtPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxFtPerfil.TabIndex = 0;
-            this.pictureBoxFtPerfil.TabStop = false;
-            this.pictureBoxFtPerfil.Click += new System.EventHandler(this.pictureBoxFtPerfil_Click);
+            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.panelMenu.Controls.Add(this.iconButtonIA);
+            this.panelMenu.Controls.Add(this.iconButtonLogout);
+            this.panelMenu.Controls.Add(this.iconButtonStatus);
+            this.panelMenu.Controls.Add(this.iconButtonHistorico);
+            this.panelMenu.Controls.Add(this.iconButtonShop);
+            this.panelMenu.Controls.Add(this.iconButtonPerfil);
+            this.panelMenu.Controls.Add(this.iconButtonPrincipal);
+            this.panelMenu.Controls.Add(this.panelLogo);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(220, 611);
+            this.panelMenu.TabIndex = 0;
             // 
-            // Exit
+            // iconButtonIA
             // 
-            this.Exit.BackColor = System.Drawing.Color.Transparent;
-            this.Exit.FlatAppearance.BorderSize = 0;
-            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
-            this.Exit.Location = new System.Drawing.Point(1107, -1);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(41, 31);
-            this.Exit.TabIndex = 3;
-            this.Exit.UseVisualStyleBackColor = false;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            this.iconButtonIA.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButtonIA.FlatAppearance.BorderSize = 0;
+            this.iconButtonIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonIA.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonIA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonIA.IconChar = FontAwesome.Sharp.IconChar.Brain;
+            this.iconButtonIA.IconColor = System.Drawing.Color.Black;
+            this.iconButtonIA.IconSize = 32;
+            this.iconButtonIA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonIA.Location = new System.Drawing.Point(0, 491);
+            this.iconButtonIA.Name = "iconButtonIA";
+            this.iconButtonIA.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonIA.Rotation = 0D;
+            this.iconButtonIA.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonIA.TabIndex = 7;
+            this.iconButtonIA.Text = "IA";
+            this.iconButtonIA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonIA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonIA.UseVisualStyleBackColor = true;
+            this.iconButtonIA.Click += new System.EventHandler(this.iconButtonIA_Click);
             // 
-            // pictureBox2
+            // iconButtonLogout
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 30);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(269, 591);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.iconButtonLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.iconButtonLogout.FlatAppearance.BorderSize = 0;
+            this.iconButtonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonLogout.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.iconButtonLogout.IconColor = System.Drawing.Color.Black;
+            this.iconButtonLogout.IconSize = 32;
+            this.iconButtonLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonLogout.Location = new System.Drawing.Point(0, 551);
+            this.iconButtonLogout.Name = "iconButtonLogout";
+            this.iconButtonLogout.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonLogout.Rotation = 0D;
+            this.iconButtonLogout.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonLogout.TabIndex = 6;
+            this.iconButtonLogout.Text = "Deslogar";
+            this.iconButtonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonLogout.UseVisualStyleBackColor = true;
+            this.iconButtonLogout.Click += new System.EventHandler(this.iconButtonLogout_Click);
             // 
-            // pictureBox3
+            // iconButtonStatus
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(269, 30);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(879, 86);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.iconButtonStatus.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButtonStatus.FlatAppearance.BorderSize = 0;
+            this.iconButtonStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonStatus.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonStatus.IconChar = FontAwesome.Sharp.IconChar.Briefcase;
+            this.iconButtonStatus.IconColor = System.Drawing.Color.Black;
+            this.iconButtonStatus.IconSize = 32;
+            this.iconButtonStatus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonStatus.Location = new System.Drawing.Point(0, 380);
+            this.iconButtonStatus.Name = "iconButtonStatus";
+            this.iconButtonStatus.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonStatus.Rotation = 0D;
+            this.iconButtonStatus.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonStatus.TabIndex = 5;
+            this.iconButtonStatus.Text = "Status";
+            this.iconButtonStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonStatus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonStatus.UseVisualStyleBackColor = true;
+            this.iconButtonStatus.Click += new System.EventHandler(this.iconButtonStatus_Click);
             // 
-            // buttonPageHome
+            // iconButtonHistorico
             // 
-            this.buttonPageHome.BackColor = System.Drawing.Color.Crimson;
-            this.buttonPageHome.FlatAppearance.BorderSize = 0;
-            this.buttonPageHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPageHome.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPageHome.ForeColor = System.Drawing.Color.White;
-            this.buttonPageHome.Location = new System.Drawing.Point(24, 127);
-            this.buttonPageHome.Name = "buttonPageHome";
-            this.buttonPageHome.Size = new System.Drawing.Size(213, 33);
-            this.buttonPageHome.TabIndex = 4;
-            this.buttonPageHome.Text = "Pagina Principal";
-            this.buttonPageHome.UseVisualStyleBackColor = false;
+            this.iconButtonHistorico.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButtonHistorico.FlatAppearance.BorderSize = 0;
+            this.iconButtonHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonHistorico.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonHistorico.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonHistorico.IconChar = FontAwesome.Sharp.IconChar.History;
+            this.iconButtonHistorico.IconColor = System.Drawing.Color.Black;
+            this.iconButtonHistorico.IconSize = 32;
+            this.iconButtonHistorico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonHistorico.Location = new System.Drawing.Point(0, 320);
+            this.iconButtonHistorico.Name = "iconButtonHistorico";
+            this.iconButtonHistorico.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonHistorico.Rotation = 0D;
+            this.iconButtonHistorico.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonHistorico.TabIndex = 4;
+            this.iconButtonHistorico.Text = "Historico";
+            this.iconButtonHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonHistorico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonHistorico.UseVisualStyleBackColor = true;
+            this.iconButtonHistorico.Click += new System.EventHandler(this.iconButtonHistorico_Click);
             // 
-            // buttonPerfil
+            // iconButtonShop
             // 
-            this.buttonPerfil.BackColor = System.Drawing.Color.Crimson;
-            this.buttonPerfil.FlatAppearance.BorderSize = 0;
-            this.buttonPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPerfil.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPerfil.ForeColor = System.Drawing.Color.White;
-            this.buttonPerfil.Location = new System.Drawing.Point(24, 166);
-            this.buttonPerfil.Name = "buttonPerfil";
-            this.buttonPerfil.Size = new System.Drawing.Size(213, 33);
-            this.buttonPerfil.TabIndex = 4;
-            this.buttonPerfil.Text = "Perfil";
-            this.buttonPerfil.UseVisualStyleBackColor = false;
+            this.iconButtonShop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButtonShop.FlatAppearance.BorderSize = 0;
+            this.iconButtonShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonShop.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonShop.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.iconButtonShop.IconColor = System.Drawing.Color.Black;
+            this.iconButtonShop.IconSize = 32;
+            this.iconButtonShop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonShop.Location = new System.Drawing.Point(0, 260);
+            this.iconButtonShop.Name = "iconButtonShop";
+            this.iconButtonShop.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonShop.Rotation = 0D;
+            this.iconButtonShop.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonShop.TabIndex = 3;
+            this.iconButtonShop.Text = "Shop";
+            this.iconButtonShop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonShop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonShop.UseVisualStyleBackColor = true;
+            this.iconButtonShop.Click += new System.EventHandler(this.iconButtonShop_Click);
             // 
-            // buttonShop
+            // iconButtonPerfil
             // 
-            this.buttonShop.BackColor = System.Drawing.Color.Crimson;
-            this.buttonShop.FlatAppearance.BorderSize = 0;
-            this.buttonShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonShop.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonShop.ForeColor = System.Drawing.Color.White;
-            this.buttonShop.Location = new System.Drawing.Point(24, 205);
-            this.buttonShop.Name = "buttonShop";
-            this.buttonShop.Size = new System.Drawing.Size(213, 33);
-            this.buttonShop.TabIndex = 4;
-            this.buttonShop.Text = "Shop";
-            this.buttonShop.UseVisualStyleBackColor = false;
+            this.iconButtonPerfil.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButtonPerfil.FlatAppearance.BorderSize = 0;
+            this.iconButtonPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonPerfil.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonPerfil.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.iconButtonPerfil.IconColor = System.Drawing.Color.Black;
+            this.iconButtonPerfil.IconSize = 32;
+            this.iconButtonPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonPerfil.Location = new System.Drawing.Point(0, 200);
+            this.iconButtonPerfil.Name = "iconButtonPerfil";
+            this.iconButtonPerfil.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonPerfil.Rotation = 0D;
+            this.iconButtonPerfil.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonPerfil.TabIndex = 2;
+            this.iconButtonPerfil.Text = "Perfil";
+            this.iconButtonPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonPerfil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonPerfil.UseVisualStyleBackColor = true;
+            this.iconButtonPerfil.Click += new System.EventHandler(this.iconButtonPerfil_Click);
             // 
-            // buttonHistorico
+            // iconButtonPrincipal
             // 
-            this.buttonHistorico.BackColor = System.Drawing.Color.Crimson;
-            this.buttonHistorico.FlatAppearance.BorderSize = 0;
-            this.buttonHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHistorico.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHistorico.ForeColor = System.Drawing.Color.White;
-            this.buttonHistorico.Location = new System.Drawing.Point(24, 244);
-            this.buttonHistorico.Name = "buttonHistorico";
-            this.buttonHistorico.Size = new System.Drawing.Size(213, 33);
-            this.buttonHistorico.TabIndex = 4;
-            this.buttonHistorico.Text = "Historico";
-            this.buttonHistorico.UseVisualStyleBackColor = false;
+            this.iconButtonPrincipal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButtonPrincipal.FlatAppearance.BorderSize = 0;
+            this.iconButtonPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButtonPrincipal.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.iconButtonPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButtonPrincipal.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconButtonPrincipal.IconColor = System.Drawing.Color.Black;
+            this.iconButtonPrincipal.IconSize = 32;
+            this.iconButtonPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonPrincipal.Location = new System.Drawing.Point(0, 140);
+            this.iconButtonPrincipal.Name = "iconButtonPrincipal";
+            this.iconButtonPrincipal.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.iconButtonPrincipal.Rotation = 0D;
+            this.iconButtonPrincipal.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonPrincipal.TabIndex = 1;
+            this.iconButtonPrincipal.Text = "Pagina Principal";
+            this.iconButtonPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButtonPrincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButtonPrincipal.UseVisualStyleBackColor = true;
+            this.iconButtonPrincipal.Click += new System.EventHandler(this.iconButtonPrincipal_Click);
             // 
-            // buttonDelogar
+            // panelLogo
             // 
-            this.buttonDelogar.BackColor = System.Drawing.Color.DimGray;
-            this.buttonDelogar.FlatAppearance.BorderSize = 0;
-            this.buttonDelogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelogar.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelogar.ForeColor = System.Drawing.Color.White;
-            this.buttonDelogar.Location = new System.Drawing.Point(24, 574);
-            this.buttonDelogar.Name = "buttonDelogar";
-            this.buttonDelogar.Size = new System.Drawing.Size(213, 33);
-            this.buttonDelogar.TabIndex = 4;
-            this.buttonDelogar.Text = "Deslogar";
-            this.buttonDelogar.UseVisualStyleBackColor = false;
-            this.buttonDelogar.Click += new System.EventHandler(this.buttonDelogar_Click);
+            this.panelLogo.Controls.Add(this.BntHome);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(220, 140);
+            this.panelLogo.TabIndex = 0;
             // 
-            // labelName
+            // BntHome
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(105, 13);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(34, 17);
-            this.labelName.TabIndex = 5;
-            this.labelName.Text = "Root";
-            this.labelName.Click += new System.EventHandler(this.label1_Click);
+            this.BntHome.Image = ((System.Drawing.Image)(resources.GetObject("BntHome.Image")));
+            this.BntHome.Location = new System.Drawing.Point(12, 12);
+            this.BntHome.Name = "BntHome";
+            this.BntHome.Size = new System.Drawing.Size(194, 113);
+            this.BntHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BntHome.TabIndex = 0;
+            this.BntHome.TabStop = false;
+            this.BntHome.Click += new System.EventHandler(this.BntHome_Click);
             // 
-            // labelCPF
+            // panelTitleBar
             // 
-            this.labelCPF.AutoSize = true;
-            this.labelCPF.Location = new System.Drawing.Point(105, 30);
-            this.labelCPF.Name = "labelCPF";
-            this.labelCPF.Size = new System.Drawing.Size(105, 17);
-            this.labelCPF.TabIndex = 6;
-            this.labelCPF.Text = "123.456.789.11";
-            this.labelCPF.Click += new System.EventHandler(this.labelCPF_Click);
+            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.panelTitleBar.Controls.Add(this.bntMinimize);
+            this.panelTitleBar.Controls.Add(this.btnMaximize);
+            this.panelTitleBar.Controls.Add(this.BntExit);
+            this.panelTitleBar.Controls.Add(this.lblTitleChildFrom);
+            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(939, 80);
+            this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
-            // labelEnd
+            // bntMinimize
             // 
-            this.labelEnd.AutoSize = true;
-            this.labelEnd.Location = new System.Drawing.Point(105, 47);
-            this.labelEnd.Name = "labelEnd";
-            this.labelEnd.Size = new System.Drawing.Size(124, 17);
-            this.labelEnd.TabIndex = 6;
-            this.labelEnd.Text = "Rua dos brabos, 123";
-            this.labelEnd.Click += new System.EventHandler(this.labelCPF_Click);
+            this.bntMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bntMinimize.FlatAppearance.BorderSize = 0;
+            this.bntMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntMinimize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.bntMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.bntMinimize.IconColor = System.Drawing.Color.Black;
+            this.bntMinimize.IconSize = 16;
+            this.bntMinimize.Location = new System.Drawing.Point(858, 3);
+            this.bntMinimize.Name = "bntMinimize";
+            this.bntMinimize.Rotation = 0D;
+            this.bntMinimize.Size = new System.Drawing.Size(22, 20);
+            this.bntMinimize.TabIndex = 2;
+            this.bntMinimize.UseVisualStyleBackColor = true;
+            this.bntMinimize.Click += new System.EventHandler(this.bntMinimize_Click);
             // 
-            // labelTel
+            // btnMaximize
             // 
-            this.labelTel.AutoSize = true;
-            this.labelTel.BackColor = System.Drawing.Color.White;
-            this.labelTel.Location = new System.Drawing.Point(105, 64);
-            this.labelTel.Name = "labelTel";
-            this.labelTel.Size = new System.Drawing.Size(105, 17);
-            this.labelTel.TabIndex = 6;
-            this.labelTel.Text = "34 9 9999-9999";
-            this.labelTel.Click += new System.EventHandler(this.labelCPF_Click);
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.FlatAppearance.BorderSize = 0;
+            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.btnMaximize.IconColor = System.Drawing.Color.Black;
+            this.btnMaximize.IconSize = 16;
+            this.btnMaximize.Location = new System.Drawing.Point(886, 3);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Rotation = 0D;
+            this.btnMaximize.Size = new System.Drawing.Size(22, 20);
+            this.btnMaximize.TabIndex = 2;
+            this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
-            // buttonIA
+            // BntExit
             // 
-            this.buttonIA.BackColor = System.Drawing.Color.DimGray;
-            this.buttonIA.FlatAppearance.BorderSize = 0;
-            this.buttonIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonIA.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIA.ForeColor = System.Drawing.Color.White;
-            this.buttonIA.Location = new System.Drawing.Point(24, 535);
-            this.buttonIA.Name = "buttonIA";
-            this.buttonIA.Size = new System.Drawing.Size(213, 33);
-            this.buttonIA.TabIndex = 4;
-            this.buttonIA.Text = "Bom Pagador";
-            this.buttonIA.UseVisualStyleBackColor = false;
+            this.BntExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BntExit.FlatAppearance.BorderSize = 0;
+            this.BntExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BntExit.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.BntExit.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.BntExit.IconColor = System.Drawing.Color.Black;
+            this.BntExit.IconSize = 16;
+            this.BntExit.Location = new System.Drawing.Point(914, 3);
+            this.BntExit.Name = "BntExit";
+            this.BntExit.Rotation = 0D;
+            this.BntExit.Size = new System.Drawing.Size(22, 20);
+            this.BntExit.TabIndex = 2;
+            this.BntExit.UseVisualStyleBackColor = true;
+            this.BntExit.Click += new System.EventHandler(this.BntExit_Click);
             // 
-            // buttonStatus
+            // lblTitleChildFrom
             // 
-            this.buttonStatus.BackColor = System.Drawing.Color.Crimson;
-            this.buttonStatus.FlatAppearance.BorderSize = 0;
-            this.buttonStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStatus.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStatus.ForeColor = System.Drawing.Color.White;
-            this.buttonStatus.Location = new System.Drawing.Point(24, 283);
-            this.buttonStatus.Name = "buttonStatus";
-            this.buttonStatus.Size = new System.Drawing.Size(213, 33);
-            this.buttonStatus.TabIndex = 4;
-            this.buttonStatus.Text = "Status";
-            this.buttonStatus.UseVisualStyleBackColor = false;
+            this.lblTitleChildFrom.AutoSize = true;
+            this.lblTitleChildFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildFrom.Location = new System.Drawing.Point(57, 43);
+            this.lblTitleChildFrom.Name = "lblTitleChildFrom";
+            this.lblTitleChildFrom.Size = new System.Drawing.Size(39, 13);
+            this.lblTitleChildFrom.TabIndex = 1;
+            this.lblTitleChildFrom.Text = "Home";
             // 
-            // panel1
+            // iconCurrentChildForm
             // 
-            this.panel1.Location = new System.Drawing.Point(284, 127);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 481);
-            this.panel1.TabIndex = 8;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Black;
+            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconCurrentChildForm.IconColor = System.Drawing.Color.Black;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(18, 25);
+            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
+            this.iconCurrentChildForm.TabIndex = 0;
+            this.iconCurrentChildForm.TabStop = false;
             // 
-            // Home
+            // panelShadow
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(220, 80);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(939, 9);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(60)))));
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 89);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(939, 522);
+            this.panelDesktop.TabIndex = 3;
+            // 
+            // Home2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1148, 620);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.labelTel);
-            this.Controls.Add(this.labelEnd);
-            this.Controls.Add(this.labelCPF);
-            this.Controls.Add(this.labelName);
-            this.Controls.Add(this.buttonDelogar);
-            this.Controls.Add(this.buttonIA);
-            this.Controls.Add(this.buttonStatus);
-            this.Controls.Add(this.buttonHistorico);
-            this.Controls.Add(this.buttonShop);
-            this.Controls.Add(this.buttonPerfil);
-            this.Controls.Add(this.buttonPageHome);
-            this.Controls.Add(this.Exit);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBoxFtPerfil);
-            this.Controls.Add(this.pictureBox2);
-            this.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ClientSize = new System.Drawing.Size(1159, 611);
+            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.panelShadow);
+            this.Controls.Add(this.panelTitleBar);
+            this.Controls.Add(this.panelMenu);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Home";
+            this.Name = "Home2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFtPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Text = "Home2";
+            this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BntHome)).EndInit();
+            this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBoxFtPerfil;
-        private System.Windows.Forms.Button Exit;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button buttonPageHome;
-        private System.Windows.Forms.Button buttonPerfil;
-        private System.Windows.Forms.Button buttonShop;
-        private System.Windows.Forms.Button buttonHistorico;
-        private System.Windows.Forms.Button buttonDelogar;
-        private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.Label labelCPF;
-        private System.Windows.Forms.Label labelEnd;
-        private System.Windows.Forms.Label labelTel;
-        private System.Windows.Forms.Button buttonIA;
-        private System.Windows.Forms.Button buttonStatus;
-        private System.Windows.Forms.Panel panel1;
+
+        private System.Windows.Forms.Panel panelMenu;
+        private FontAwesome.Sharp.IconButton iconButtonPrincipal;
+        private System.Windows.Forms.Panel panelLogo;
+        private FontAwesome.Sharp.IconButton iconButtonStatus;
+        private FontAwesome.Sharp.IconButton iconButtonHistorico;
+        private FontAwesome.Sharp.IconButton iconButtonShop;
+        private FontAwesome.Sharp.IconButton iconButtonPerfil;
+        private FontAwesome.Sharp.IconButton iconButtonIA;
+        private FontAwesome.Sharp.IconButton iconButtonLogout;
+        private System.Windows.Forms.PictureBox BntHome;
+        private System.Windows.Forms.Panel panelTitleBar;
+        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
+        private System.Windows.Forms.Label lblTitleChildFrom;
+        private System.Windows.Forms.Panel panelShadow;
+        private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconButton bntMinimize;
+        private FontAwesome.Sharp.IconButton btnMaximize;
+        private FontAwesome.Sharp.IconButton BntExit;
     }
 }
