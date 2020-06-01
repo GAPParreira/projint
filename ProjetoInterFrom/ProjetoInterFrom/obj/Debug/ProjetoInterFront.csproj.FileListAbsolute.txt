@@ -43,3 +43,4 @@ C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\bin\Debug\System.ValueTuple.xml
 C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\RefitStubs.g.cs
+C:\Users\gabri\OneDrive\Documentos\projint\ProjetoInterFrom\ProjetoInterFrom\obj\Debug\ProjetoInterFrom.View.FormCreateLogin.resources

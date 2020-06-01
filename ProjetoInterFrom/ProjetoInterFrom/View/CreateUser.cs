@@ -1,9 +1,12 @@
-﻿using System;
+﻿using ProjetoInterFrom.Controller;
+using ProjetoInterFrom.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -56,13 +59,14 @@ namespace ProjetoInterFront
             }
             else
             {
-                string name = textBoxNome.Text;
+                string nome = textBoxNome.Text;
                 string endereco = textBoxEndereco.Text;
                 string tel = textBoxTel.Text;
                 string cpf = textBoxCPF.Text;
                 string data = dateTimePickerDtNasc.Text;
-                MessageBox.Show(name + "\n" + endereco + "\n" + tel + "\n" + cpf + "/n" + data);
-                this.Dispose();
+                Pessoa pessoa = new Pessoa(cpf, data, endereco, nome, tel);
+                PessoaController api = new PessoaController();
+                api.PostPessoa(pessoa);
             }            
         }
 

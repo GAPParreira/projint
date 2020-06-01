@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoInterFrom.View
 {
-    public partial class Form1 : Form
+    public partial class FormCreateLogin : Form
     {
-        public Form1()
+        public FormCreateLogin()
         {
             InitializeComponent();
         }
