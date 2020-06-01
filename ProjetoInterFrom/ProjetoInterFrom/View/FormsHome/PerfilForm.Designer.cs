@@ -38,7 +38,6 @@
             this.labelTel = new System.Windows.Forms.Label();
             this.labelEnd = new System.Windows.Forms.Label();
             this.labelCPF = new System.Windows.Forms.Label();
-            this.buttonEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelN
@@ -119,7 +118,7 @@
             this.labelTel.Name = "labelTel";
             this.labelTel.Size = new System.Drawing.Size(110, 30);
             this.labelTel.TabIndex = 0;
-            this.labelTel.Text = "Telefone:";
+            this.labelTel.Text = "Telefone:";            
             // 
             // labelEnd
             // 
@@ -141,27 +140,12 @@
             this.labelCPF.TabIndex = 0;
             this.labelCPF.Text = "CPF:";
             // 
-            // buttonEditar
-            // 
-            this.buttonEditar.BackColor = System.Drawing.Color.Crimson;
-            this.buttonEditar.FlatAppearance.BorderSize = 0;
-            this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditar.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditar.ForeColor = System.Drawing.Color.White;
-            this.buttonEditar.Location = new System.Drawing.Point(193, 258);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(203, 40);
-            this.buttonEditar.TabIndex = 6;
-            this.buttonEditar.Text = "Editar";
-            this.buttonEditar.UseVisualStyleBackColor = false;
-            // 
             // PerfilForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(939, 522);
-            this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.labelCPF);
             this.Controls.Add(this.labelC);
             this.Controls.Add(this.labelEnd);
@@ -192,6 +176,5 @@
         private System.Windows.Forms.Label labelTel;
         private System.Windows.Forms.Label labelEnd;
         private System.Windows.Forms.Label labelCPF;
-        private System.Windows.Forms.Button buttonEditar;
     }
 }

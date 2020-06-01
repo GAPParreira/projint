@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoInterFrom.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,9 @@ namespace ProjetoInterFrom.View.FormsHome
     public partial class ShopForm : Form
     {
         bool consultaValidacao = false;
-        double precoHour = 2.00;
         DateTime Start = new DateTime();
         DateTime End = new DateTime();
+        Aluguel aluguel;
         public ShopForm()
         {
             InitializeComponent();
@@ -31,11 +32,8 @@ namespace ProjetoInterFrom.View.FormsHome
                 Start = Convert.ToDateTime(dateTimePickerInicial.Text);
                 End = Convert.ToDateTime(dateTimePickerFinal.Text);
                 if(Start < End) 
-                {
-                    TimeSpan date = End.Subtract(Start);
-                    double totalHours = date.TotalHours;
-                    double PagarT = totalHours * precoHour;
-                    MessageBox.Show("Preco do aluguel ficou em: " + totalHours.ToString("F2") + " Horas por " + PagarT.ToString("F2") + " Reais");
+                {                    
+                    MessageBox.Show("Preco do aluguel ficou em: " + aluguel.hrs.ToString("F2") + " Horas por " + aluguel.valor.ToString("F2") + " Reais");
                     consultaValidacao = false;
                 }
                 else
@@ -58,13 +56,11 @@ namespace ProjetoInterFrom.View.FormsHome
             Start = Convert.ToDateTime(dateTimePickerInicial.Text);
             End = Convert.ToDateTime(dateTimePickerFinal.Text);
             if(Start < End)
-            {                
-                TimeSpan date = End.Subtract(Start);
-                double totalHours = date.TotalHours;
-                totalHours = Math.Ceiling(totalHours);
-                double PagarT = totalHours * precoHour;
-                labelDias.Text = Convert.ToString(totalHours.ToString("F0") + " Horas");
-                labelPagar.Text = Convert.ToString(PagarT.ToString("F2") + " Reais");
+            {
+                aluguel = new Aluguel(Start, End);
+                aluguel.Alugar();
+                labelDias.Text = Convert.ToString(aluguel.hrs.ToString("F0") + " Horas");
+                labelPagar.Text = Convert.ToString(aluguel.valor.ToString("F2") + " Reais");
                 consultaValidacao = true;
             }
             else

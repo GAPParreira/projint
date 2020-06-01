@@ -30,16 +30,18 @@
         {
             this.labelIndex = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labeldtInitial = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelTmpRestante = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelMulta = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.labelVrMulta = new System.Windows.Forms.Label();
             this.SemAluguel = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
+            this.labelValor = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labeldtEnd = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelIndex
@@ -62,36 +64,18 @@
             this.label1.Size = new System.Drawing.Size(138, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Data do aluguel";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labeldtInitial
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(134, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Status";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(278, 133);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "06/05/2020";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(278, 157);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 24);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Pendente";
+            this.labeldtInitial.AutoSize = true;
+            this.labeldtInitial.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldtInitial.Location = new System.Drawing.Point(278, 133);
+            this.labeldtInitial.Name = "labeldtInitial";
+            this.labeldtInitial.Size = new System.Drawing.Size(116, 24);
+            this.labeldtInitial.TabIndex = 1;
+            this.labeldtInitial.Text = "06/05/2020";
+            this.labeldtInitial.Click += new System.EventHandler(this.labeldtInitial_Click);
             // 
             // label5
             // 
@@ -103,15 +87,15 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Tempo Restante";
             // 
-            // label6
+            // labelTmpRestante
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(278, 181);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 24);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "00:25";
+            this.labelTmpRestante.AutoSize = true;
+            this.labelTmpRestante.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTmpRestante.Location = new System.Drawing.Point(278, 181);
+            this.labelTmpRestante.Name = "labelTmpRestante";
+            this.labelTmpRestante.Size = new System.Drawing.Size(59, 24);
+            this.labelTmpRestante.TabIndex = 1;
+            this.labelTmpRestante.Text = "00:25";
             // 
             // label7
             // 
@@ -123,15 +107,15 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Multa";
             // 
-            // label8
+            // labelMulta
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(278, 205);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 24);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "01:00";
+            this.labelMulta.AutoSize = true;
+            this.labelMulta.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMulta.Location = new System.Drawing.Point(278, 205);
+            this.labelMulta.Name = "labelMulta";
+            this.labelMulta.Size = new System.Drawing.Size(59, 24);
+            this.labelMulta.TabIndex = 1;
+            this.labelMulta.Text = "01:00";
             // 
             // label9
             // 
@@ -144,15 +128,15 @@
             this.label9.Tag = "";
             this.label9.Text = "Valor da multa";
             // 
-            // label10
+            // labelVrMulta
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(278, 229);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 24);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "20 Reais";
+            this.labelVrMulta.AutoSize = true;
+            this.labelVrMulta.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVrMulta.Location = new System.Drawing.Point(278, 229);
+            this.labelVrMulta.Name = "labelVrMulta";
+            this.labelVrMulta.Size = new System.Drawing.Size(83, 24);
+            this.labelVrMulta.TabIndex = 1;
+            this.labelVrMulta.Text = "20 Reais";
             // 
             // SemAluguel
             // 
@@ -161,9 +145,54 @@
             this.SemAluguel.ForeColor = System.Drawing.Color.Crimson;
             this.SemAluguel.Location = new System.Drawing.Point(133, 103);
             this.SemAluguel.Name = "SemAluguel";
-            this.SemAluguel.Size = new System.Drawing.Size(37, 30);
+            this.SemAluguel.Size = new System.Drawing.Size(0, 30);
             this.SemAluguel.TabIndex = 2;
-            this.SemAluguel.Text = "ss";
+            this.SemAluguel.Click += new System.EventHandler(this.SemAluguel_Click);
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.Location = new System.Drawing.Point(134, 253);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(51, 24);
+            this.label.TabIndex = 1;
+            this.label.Tag = "";
+            this.label.Text = "Valor";
+            this.label.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // labelValor
+            // 
+            this.labelValor.AutoSize = true;
+            this.labelValor.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValor.Location = new System.Drawing.Point(278, 253);
+            this.labelValor.Name = "labelValor";
+            this.labelValor.Size = new System.Drawing.Size(83, 24);
+            this.labelValor.TabIndex = 1;
+            this.labelValor.Text = "20 Reais";
+            this.labelValor.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(134, 157);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Data do aluguel";
+            this.label2.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // labeldtEnd
+            // 
+            this.labeldtEnd.AutoSize = true;
+            this.labeldtEnd.Font = new System.Drawing.Font("Franklin Gothic Medium", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldtEnd.Location = new System.Drawing.Point(278, 157);
+            this.labeldtEnd.Name = "labeldtEnd";
+            this.labeldtEnd.Size = new System.Drawing.Size(116, 24);
+            this.labeldtEnd.TabIndex = 1;
+            this.labeldtEnd.Text = "06/05/2020";
+            this.labeldtEnd.Click += new System.EventHandler(this.labeldtInitial_Click);
             // 
             // StatusForm
             // 
@@ -172,15 +201,17 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.SemAluguel);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelValor);
+            this.Controls.Add(this.labelVrMulta);
+            this.Controls.Add(this.labelMulta);
+            this.Controls.Add(this.labelTmpRestante);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.labeldtEnd);
+            this.Controls.Add(this.labeldtInitial);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelIndex);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -196,15 +227,17 @@
 
         private System.Windows.Forms.Label labelIndex;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labeldtInitial;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelTmpRestante;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelMulta;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelVrMulta;
         private System.Windows.Forms.Label SemAluguel;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label labelValor;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labeldtEnd;
     }
 }

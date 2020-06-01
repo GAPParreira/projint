@@ -31,7 +31,6 @@
             this.checkBoxConfirmed = new System.Windows.Forms.CheckBox();
             this.labelDateInitial = new System.Windows.Forms.Label();
             this.labelDateEnd = new System.Windows.Forms.Label();
-            this.labelFormatDate = new System.Windows.Forms.Label();
             this.labelDias = new System.Windows.Forms.Label();
             this.labelPagar = new System.Windows.Forms.Label();
             this.iconButtonAlugar = new FontAwesome.Sharp.IconButton();
@@ -70,16 +69,6 @@
             this.labelDateEnd.Size = new System.Drawing.Size(91, 21);
             this.labelDateEnd.TabIndex = 1;
             this.labelDateEnd.Text = "Data Final";
-            // 
-            // labelFormatDate
-            // 
-            this.labelFormatDate.AutoSize = true;
-            this.labelFormatDate.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFormatDate.Location = new System.Drawing.Point(169, 52);
-            this.labelFormatDate.Name = "labelFormatDate";
-            this.labelFormatDate.Size = new System.Drawing.Size(312, 20);
-            this.labelFormatDate.TabIndex = 1;
-            this.labelFormatDate.Text = "Formato da data: dd/mm/aaaa hh:mm:ss";
             // 
             // labelDias
             // 
@@ -171,7 +160,6 @@
             this.Controls.Add(this.iconButtonAlugar);
             this.Controls.Add(this.labelPagar);
             this.Controls.Add(this.labelDias);
-            this.Controls.Add(this.labelFormatDate);
             this.Controls.Add(this.labelDateEnd);
             this.Controls.Add(this.labelDateInitial);
             this.Controls.Add(this.checkBoxConfirmed);
@@ -188,7 +176,6 @@
         private System.Windows.Forms.CheckBox checkBoxConfirmed;
         private System.Windows.Forms.Label labelDateInitial;
         private System.Windows.Forms.Label labelDateEnd;
-        private System.Windows.Forms.Label labelFormatDate;
         private System.Windows.Forms.Label labelDias;
         private System.Windows.Forms.Label labelPagar;
         private FontAwesome.Sharp.IconButton iconButtonAlugar;

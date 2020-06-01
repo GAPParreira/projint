@@ -42,19 +42,33 @@ namespace ProjetoInterFront
         private void buttonLimpar_Click(object sender, EventArgs e)
         {
             textBoxNome.Text = "";
-            textBoxEmail.Text = "";
-            textBoxLogin.Text = "";
-            textBoxPass.Text = "";
+            textBoxEndereco.Text = "";
+            textBoxTel.Text = "";
+            textBoxCPF.Text = "";
+            dateTimePickerDtNasc.Text = "01/01/01";
         }
 
         private void buttonCadastro_Click(object sender, EventArgs e)
         {
-            string name = textBoxNome.Text;
-            string email = textBoxEmail.Text;
-            string login = textBoxLogin.Text;
-            string password = textBoxPass.Text;
-            MessageBox.Show(name + "\n" + email + "\n" + login + "\n" + password);
-            this.Dispose();
+            if (textBoxNome.Text == "" || textBoxEndereco.Text == "" || textBoxTel.Text == "" || textBoxCPF.Text == "")
+            {
+                MessageBox.Show("Preencha todos os campos!");
+            }
+            else
+            {
+                string name = textBoxNome.Text;
+                string endereco = textBoxEndereco.Text;
+                string tel = textBoxTel.Text;
+                string cpf = textBoxCPF.Text;
+                string data = dateTimePickerDtNasc.Text;
+                MessageBox.Show(name + "\n" + endereco + "\n" + tel + "\n" + cpf + "/n" + data);
+                this.Dispose();
+            }            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

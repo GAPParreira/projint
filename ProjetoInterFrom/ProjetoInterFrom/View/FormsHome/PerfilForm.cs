@@ -9,37 +9,30 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using ProjetoInterFrom.Model;
+using Refit;
+using ProjetoInterFrom.Controller;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Http;
+using System.Net.Http.Formatting;
 
 namespace ProjetoInterFrom.View.FormsHome
 {
     public partial class PerfilForm : Form
     {
-        string nome;
-        DateTime dataNascimento;
-        long telefone;
-        string endereco;
-        string cPF;
+        
 
         public PerfilForm()
         {
             InitializeComponent();
-            string sourceFilePath = @"C:\Users\gabri\OneDrive\Documentos\projint\Pessoa.csv";
-            string[] lines = File.ReadAllLines(sourceFilePath);
+            PessoaController api = new PessoaController();
+            var result = api.GetPessoa("11");
+            Pessoa pessoa = result[0];
 
-            string[] fields = lines[0].Split(',');
-            nome = fields[0];
-            dataNascimento = DateTime.Parse(fields[1]);
-            telefone = long.Parse(fields[2]);
-            endereco = fields[3];
-            cPF = fields[4];
-
-            // Pessoa usuario = new Pessoa(nome, dataNascimento, telefone, endereco, cPF);
-
-            labelNome.Text = nome;
-            labelDtNasc.Text = Convert.ToString(dataNascimento);
-            labelTel.Text = Convert.ToString(telefone);
-            labelEnd.Text = endereco;
-            labelCPF.Text = Convert.ToString(cPF);
+            labelNome.Text = pessoa.Nome;
+            labelDtNasc.Text = pessoa.DataNascimento;
+            labelTel.Text = pessoa.Telefone;
+            labelEnd.Text = pessoa.Endereco;
+            labelCPF.Text = pessoa.CPF;
         }
     }
 }
