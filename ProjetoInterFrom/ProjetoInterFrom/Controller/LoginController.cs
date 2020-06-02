@@ -31,10 +31,10 @@ namespace ProjetoInterFrom.Controller
             
 
             JObject loginJson = JObject.Parse(response.Content.ReadAsStringAsync().Result);
-
+            idToken.idLogin = loginJson["id"].ToString();
             Pessoa pessoas = new Pessoa() { nome = loginJson["pessoa"]["nome"].ToString(), dateNasc = loginJson["pessoa"]["dateNasc"].ToString(), cpf = loginJson["pessoa"]["cpf"].ToString(), endereco = loginJson["pessoa"]["endereco"].ToString(), telefone = loginJson["pessoa"]["telefone"].ToString(), id = loginJson["pessoa"]["id"].ToString() };
             LoginMod loginList = new LoginMod(pessoas)
-            {
+            {                
                 login = loginJson["login"].ToString(),
                 senha = loginJson["senha"].ToString(),                
             }; 

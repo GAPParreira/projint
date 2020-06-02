@@ -9,15 +9,17 @@ namespace ProjetoInterFrom.Model
     class MontarAluguel
     {
         public string id;
-        public string tempo_inicio;
-        public string tempo_final;
+        public DateTime tempo_inicio;
+        public DateTime tempo_final;
+        public string tempo_ini;
+        public string tempo_fin;
         //Bicicleta bicicleta = new Bicicleta();
         public string bicicleta = "11";
         public string multa = "0";
         public string status = "11";
         //Pessoa pessoa = new Pessoa();
         // MetododePagamento metodo = new MetododePagamento();
-        public string usuario = idToken.id;
+        public string usuario = idToken.idLogin;
         public string metodoDePagamento = "11";
 
         public MontarAluguel()
@@ -33,7 +35,13 @@ namespace ProjetoInterFrom.Model
             this.metodoDePagamento = metodo;
         }
 
-        public MontarAluguel(string tempo_inicio, string tempo_final)
+        public MontarAluguel(string tempo_ini, string tempo_fin)
+        {
+            this.tempo_ini = tempo_ini;
+            this.tempo_fin = tempo_fin;
+        }
+
+        public MontarAluguel(DateTime tempo_inicio, DateTime tempo_final)
         {
             this.tempo_inicio = tempo_inicio;
             this.tempo_final = tempo_final;

@@ -1,4 +1,5 @@
 ﻿using ProjetoInterFrom.Controller;
+using ProjetoInterFrom.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,16 +27,12 @@ namespace ProjetoInterFrom.View.FormsHome
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            HistoricoController api = new HistoricoController();
-            api.GetHistorico("11");
+            AluguelController api = new AluguelController();
+            List<Aluguel> aluguel = new List<Aluguel>();
+            aluguel = api.GetAlugueis(idToken.nome);
 
-            string sourcePath = @"C:\Users\gabri\OneDrive\Documentos\projint\Aluguel.csv";         
-            string[] lines = File.ReadAllLines(sourcePath);
-
-            string[] fields = lines[0].Split(',');
-            dtInitial = Convert.ToDateTime(fields[0]);
-            hrs = Convert.ToInt32(fields[2]);
-            valor = Convert.ToDouble(fields[3]);
+            dataGridView1.DataSource = aluguel;
+           
 
             
         }

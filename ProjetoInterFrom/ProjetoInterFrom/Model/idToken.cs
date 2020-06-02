@@ -10,5 +10,6 @@ namespace ProjetoInterFrom.Model
     {
         public static string id { get; set; }  
         public static string nome { get; set; }
+        public static string idLogin { get; set; }
     }
 }

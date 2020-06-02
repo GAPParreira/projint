@@ -64,7 +64,7 @@ namespace ProjetoInterFront
             if (textBoxUser.Text == login.login && textBoxPassword.Text == login.senha)
             {
                 idToken.id = login.rspId();
-                idToken.id = login.rspNome();
+                idToken.nome = login.rspNome();
                 Home home = new Home(this);
                 this.Hide();
                 home.Closed += (s, args) => this.Close();
