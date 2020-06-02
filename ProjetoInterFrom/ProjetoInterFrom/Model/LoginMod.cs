@@ -11,6 +11,7 @@ namespace ProjetoInterFrom.Model
         public string Id { get; set; }
         public string login { get; set; }
         public string senha { get; set; }
+        CreateUserMod response;
         
         Pessoa pessoa = new Pessoa();
 
@@ -40,5 +41,10 @@ namespace ProjetoInterFrom.Model
             return pessoa.nome;
         }
         
+        public CreateUserMod returnCreate()
+        {
+            response = new CreateUserMod(login, senha, pessoa.id);
+            return response;
+        }
     }
 }

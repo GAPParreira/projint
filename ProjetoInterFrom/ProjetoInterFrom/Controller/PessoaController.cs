@@ -41,7 +41,7 @@ namespace ProjetoInterFrom.Controller
 
         public List<Pessoa> GetPessoaId(string cpf)
         {
-            string action = string.Format("pessoa/cpf/{0}", cpf);
+            string action = string.Format("/pessoa/cpf/{0}", cpf);
 
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, baseUrl + action);
 

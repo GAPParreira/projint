@@ -68,14 +68,24 @@ namespace ProjetoInterFront
                 Pessoa pessoa = new Pessoa(cpf, data, endereco, nome, tel);
                 PessoaController api = new PessoaController();
                 api.PostPessoa(pessoa);
-                FormCreateLogin createLogin = new FormCreateLogin();
-
+                FormCreateLogin createLogin = new FormCreateLogin();                
+                this.Hide();
+                createLogin.Closed += (s, args) => this.Close();
+                createLogin.Show();
             }            
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            FormCreateLogin createLogin = new FormCreateLogin();
+            this.Hide();
+            createLogin.Closed += (s, args) => this.Close();
+            createLogin.Show();
         }
     }
 }

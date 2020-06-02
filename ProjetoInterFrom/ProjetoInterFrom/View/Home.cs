@@ -131,7 +131,7 @@ namespace ProjetoInterFrom.View
 
         private void iconButtonLogout_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RBGColors.color2);
+            
             Login login = new Login();
             this.Hide();
             login.Closed += (s, args) => this.Close();

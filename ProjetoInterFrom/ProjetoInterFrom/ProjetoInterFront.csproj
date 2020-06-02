@@ -129,6 +129,7 @@
     <Compile Include="Model\Aluguel.cs" />
     <Compile Include="Model\Bicicleta.cs" />
     <Compile Include="Model\Cor.cs" />
+    <Compile Include="Model\CreateUserMod.cs" />
     <Compile Include="Model\HistoricoMod.cs" />
     <Compile Include="Model\idToken.cs" />
     <Compile Include="Model\LoginMod.cs" />

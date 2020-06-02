@@ -44,6 +44,7 @@
             this.textBoxTel = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePickerDtNasc = new System.Windows.Forms.DateTimePicker();
+            this.buttonLogin = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,11 +194,26 @@
             this.dateTimePickerDtNasc.Size = new System.Drawing.Size(260, 26);
             this.dateTimePickerDtNasc.TabIndex = 8;
             // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.Red;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(131, 294);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(100, 36);
+            this.buttonLogin.TabIndex = 9;
+            this.buttonLogin.Text = "Login";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            // 
             // CreateUser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(469, 531);
+            this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.dateTimePickerDtNasc);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -243,5 +259,6 @@
         private System.Windows.Forms.TextBox textBoxTel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePickerDtNasc;
+        private System.Windows.Forms.Button buttonLogin;
     }
 }

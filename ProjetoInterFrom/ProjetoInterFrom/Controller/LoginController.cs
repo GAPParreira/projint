@@ -43,9 +43,9 @@ namespace ProjetoInterFrom.Controller
             return loginList;
         }
 
-        public async void PostLogin(LoginMod login)
+        public async void PostLogin(CreateUserMod login)
         {
-            string action = string.Format("/usuario", );
+            string action = string.Format("/usuario");
 
             string request = (baseUrl + action);
 
