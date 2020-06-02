@@ -36,11 +36,12 @@ namespace ProjetoInterFrom.Model
             this.dtEnd = dtEnd;
         }
 
-        public Aluguel(string dtIni, Multa multaA, StatusMod statusA)
+        public Aluguel(string dtIni, Multa multaA, StatusMod statusA, Pessoa pessoa)
         {
             this.dtIni = dtIni;
             this.multaA = multaA;
             this.statusA = statusA;
+            this.pessoa = pessoa;
         }
 
         public void Alugar()
@@ -63,6 +64,11 @@ namespace ProjetoInterFrom.Model
         {
             MontarAluguel aluguel = new MontarAluguel(datafin, datafin);
             return aluguel;
+        }
+
+        public string returnNomePessoa()
+        {
+            return pessoa.nome;
         }
     }
 }

@@ -37,9 +37,9 @@ namespace ProjetoInterFrom.View.FormsHome
                 {
                     aluguel = new Aluguel(Start, End);
                     aluguel.Alugar();
-                    //mAluguel = aluguel.returnAluguel(Start, End);                    
-                    //AluguelController api = new AluguelController();
-                    //api.PostAluguel(mAluguel);
+                    mAluguel = aluguel.returnAluguel(Start.ToString(), End.ToString());                    
+                    AluguelController api = new AluguelController();
+                    api.PostAluguel(mAluguel);
                     MessageBox.Show("Alugado");
                     consultaValidacao = false;
                 }

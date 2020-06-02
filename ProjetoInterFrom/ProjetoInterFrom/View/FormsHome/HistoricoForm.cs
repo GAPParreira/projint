@@ -23,15 +23,16 @@ namespace ProjetoInterFrom.View.FormsHome
         public HistoricoForm()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
             AluguelController api = new AluguelController();
             List<Aluguel> aluguel = new List<Aluguel>();
             aluguel = api.GetAlugueis(idToken.nome);
 
             dataGridView1.DataSource = aluguel;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
            
 
             

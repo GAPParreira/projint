@@ -37,26 +37,32 @@ namespace ProjetoInterFrom.Controller
 
         public List<Aluguel> GetAlugueis(string nome)
         {
-            string action = string.Format("/usuario/name/{0}", nome);
+            string action = string.Format("/aluguel");
 
             HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, baseUrl + action);
 
             HttpResponseMessage response = HttpInstance.GetHttpClientInstance().SendAsync(request).Result;
 
-            JArray aluguelJson = JArray.Parse(response.Content.ReadAsStringAsync().Result);
+            JArray aluguelJson = (JArray)JObject.Parse(response.Content.ReadAsStringAsync().Result)[""];
+
 
             List<Aluguel> alugueis = new List<Aluguel>();
+            List<Aluguel> aluguelA = new List<Aluguel>();
+            
 
-            foreach (var alugueisJson in aluguelJson)
+            foreach (var p in aluguelJson)
             {
+                Pessoa pessoa = new Pessoa() { nome = aluguelJson["nome"].ToString(), dateNasc = aluguelJson["dateNasc"].ToString(), cpf = aluguelJson["cpf"].ToString(), endereco = aluguelJson["endereco"].ToString(), telefone = aluguelJson["telefone"].ToString() };
                 StatusMod statusA = new StatusMod() { nome = aluguelJson["status"]["nome"].ToString(), id = aluguelJson["status"]["id"].ToString() };
                 Multa multa = new Multa() { nome = aluguelJson["multa"]["nome"].ToString(), id = aluguelJson["multa"]["id"].ToString() };
                 string dtIni = aluguelJson["tempo_inicio"].ToString();
-                Aluguel aluguel = new Aluguel(dtIni, multa, statusA);
-                alugueis.Add(aluguel);
+                Aluguel aluguel = new Aluguel(dtIni, multa, statusA,pessoa);
+                aluguelA.Add(aluguel);
             }
                         
-            return alugueis;
+            
+                        
+            return aluguelA;
         }
     }
 }

@@ -11,6 +11,7 @@ namespace ProjetoInterFrom.Model
         public string Id { get; set; }
         public string login { get; set; }
         public string senha { get; set; }
+        
         Pessoa pessoa = new Pessoa();
 
         public LoginMod()
@@ -21,6 +22,7 @@ namespace ProjetoInterFrom.Model
         {
             this.login = login;
             this.senha = senha;
+            
         }
 
         public LoginMod(Pessoa pessoa)

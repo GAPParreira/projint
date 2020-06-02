@@ -22,7 +22,14 @@ namespace ProjetoInterFrom.View
 
         private void buttonCadastro_Click(object sender, EventArgs e)
         {
-
+            string cpf = textBoxCpf.Text;            
+            Pessoa pessoa = new Pessoa();
+            PessoaController apiP = new PessoaController();
+            var result = apiP.GetPessoaId(cpf);
+            pessoa = result[0];
+            LoginMod loginM = new LoginMod(textBoxLogin.Text, textBoxPassword.Text);
+            loginM = new LoginMod(pessoa);
+            
         }
     }
 }

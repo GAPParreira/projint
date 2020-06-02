@@ -1,5 +1,6 @@
 ﻿using ProjetoInterFrom.Controller;
 using ProjetoInterFrom.Model;
+using ProjetoInterFrom.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,7 +68,8 @@ namespace ProjetoInterFront
                 Pessoa pessoa = new Pessoa(cpf, data, endereco, nome, tel);
                 PessoaController api = new PessoaController();
                 api.PostPessoa(pessoa);
-                //api.GetAllPessoa();
+                FormCreateLogin createLogin = new FormCreateLogin();
+
             }            
         }
 

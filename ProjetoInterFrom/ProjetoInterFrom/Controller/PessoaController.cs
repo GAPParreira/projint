@@ -39,7 +39,21 @@ namespace ProjetoInterFrom.Controller
             return pessoaList;
         }
 
-        
+        public List<Pessoa> GetPessoaId(string cpf)
+        {
+            string action = string.Format("pessoa/cpf/{0}", cpf);
+
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, baseUrl + action);
+
+            HttpResponseMessage response = HttpInstance.GetHttpClientInstance().SendAsync(request).Result;
+
+            List<Pessoa> pessoaList = new List<Pessoa>();
+            JObject pessoasJson = JObject.Parse(response.Content.ReadAsStringAsync().Result);
+
+            pessoaList.Add(new Pessoa() { nome = pessoasJson["nome"].ToString(), dateNasc = pessoasJson["dateNasc"].ToString(), cpf = pessoasJson["cpf"].ToString(), endereco = pessoasJson["endereco"].ToString(), telefone = pessoasJson["telefone"].ToString() });
+
+            return pessoaList;
+        }
 
         public async void PostPessoa(Pessoa pessoa)
         {

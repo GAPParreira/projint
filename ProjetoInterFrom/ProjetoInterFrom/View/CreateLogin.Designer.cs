@@ -39,7 +39,7 @@
             this.buttonCadastro = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Button();
-            this.textBoxCode = new System.Windows.Forms.TextBox();
+            this.textBoxCpf = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,12 +147,12 @@
             this.Exit.TabIndex = 9;
             this.Exit.UseVisualStyleBackColor = false;
             // 
-            // textBoxCode
+            // textBoxCpf
             // 
-            this.textBoxCode.Location = new System.Drawing.Point(145, 178);
-            this.textBoxCode.Name = "textBoxCode";
-            this.textBoxCode.Size = new System.Drawing.Size(301, 20);
-            this.textBoxCode.TabIndex = 15;
+            this.textBoxCpf.Location = new System.Drawing.Point(145, 178);
+            this.textBoxCpf.Name = "textBoxCpf";
+            this.textBoxCpf.Size = new System.Drawing.Size(301, 20);
+            this.textBoxCpf.TabIndex = 15;
             // 
             // FormCreateLogin
             // 
@@ -164,7 +164,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelNome);
-            this.Controls.Add(this.textBoxCode);
+            this.Controls.Add(this.textBoxCpf);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.buttonLimpar);
@@ -192,6 +192,6 @@
         private System.Windows.Forms.Button buttonCadastro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Exit;
-        private System.Windows.Forms.TextBox textBoxCode;
+        private System.Windows.Forms.TextBox textBoxCpf;
     }
 }

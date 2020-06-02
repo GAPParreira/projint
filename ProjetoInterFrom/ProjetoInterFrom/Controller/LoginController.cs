@@ -11,6 +11,7 @@ namespace ProjetoInterFrom.Controller
 {
     class LoginController
     {
+        PessoaController apiP = new PessoaController();
         public string baseUrl
         {
             get
@@ -40,6 +41,22 @@ namespace ProjetoInterFrom.Controller
             }; 
             
             return loginList;
+        }
+
+        public async void PostLogin(LoginMod login)
+        {
+            string action = string.Format("/usuario", );
+
+            string request = (baseUrl + action);
+
+
+            using (HttpClient client = new HttpClient())
+            {
+
+                client.BaseAddress = new Uri(request);
+                var response = await client.PostAsJsonAsync("", login);
+
+            }
         }
     }
 }
