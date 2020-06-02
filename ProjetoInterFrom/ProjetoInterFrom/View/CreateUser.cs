@@ -67,6 +67,7 @@ namespace ProjetoInterFront
                 Pessoa pessoa = new Pessoa(cpf, data, endereco, nome, tel);
                 PessoaController api = new PessoaController();
                 api.PostPessoa(pessoa);
+                //api.GetAllPessoa();
             }            
         }
 

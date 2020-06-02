@@ -162,7 +162,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 336);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(459, 195);
+            this.pictureBox1.Size = new System.Drawing.Size(469, 195);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -185,7 +185,7 @@
             // 
             // dateTimePickerDtNasc
             // 
-            this.dateTimePickerDtNasc.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePickerDtNasc.CustomFormat = "dd-MM-yyyy";
             this.dateTimePickerDtNasc.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerDtNasc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerDtNasc.Location = new System.Drawing.Point(187, 177);
@@ -197,7 +197,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(459, 531);
+            this.ClientSize = new System.Drawing.Size(469, 531);
             this.Controls.Add(this.dateTimePickerDtNasc);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);

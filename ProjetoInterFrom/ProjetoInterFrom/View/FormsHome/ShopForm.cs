@@ -1,12 +1,15 @@
-﻿using ProjetoInterFrom.Model;
+﻿using ProjetoInterFrom.Controller;
+using ProjetoInterFrom.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace ProjetoInterFrom.View.FormsHome
@@ -17,12 +20,10 @@ namespace ProjetoInterFrom.View.FormsHome
         DateTime Start = new DateTime();
         DateTime End = new DateTime();
         Aluguel aluguel;
+        MontarAluguel mAluguel;
         public ShopForm()
         {
-            InitializeComponent();
-            
-            
-            
+            InitializeComponent();        
         }
 
         private void iconButtonAlugar_Click(object sender, EventArgs e)
@@ -31,9 +32,15 @@ namespace ProjetoInterFrom.View.FormsHome
             {
                 Start = Convert.ToDateTime(dateTimePickerInicial.Text);
                 End = Convert.ToDateTime(dateTimePickerFinal.Text);
+
                 if(Start < End) 
-                {                    
-                    MessageBox.Show("Preco do aluguel ficou em: " + aluguel.hrs.ToString("F2") + " Horas por " + aluguel.valor.ToString("F2") + " Reais");
+                {
+                    aluguel = new Aluguel(Start, End);
+                    aluguel.Alugar();
+                    mAluguel = aluguel.returnAluguel(dateTimePickerInicial.Text, dateTimePickerFinal.Text);                    
+                    AluguelController api = new AluguelController();
+                    api.PostAluguel(mAluguel);
+                    MessageBox.Show("Alugado");
                     consultaValidacao = false;
                 }
                 else
@@ -62,11 +69,12 @@ namespace ProjetoInterFrom.View.FormsHome
                 labelDias.Text = Convert.ToString(aluguel.hrs.ToString("F0") + " Horas");
                 labelPagar.Text = Convert.ToString(aluguel.valor.ToString("F2") + " Reais");
                 consultaValidacao = true;
+
             }
             else
             {
                 MessageBox.Show("A data final tem que ser maior que a data inicial.");
             }
-        }
+        }       
     }
 }

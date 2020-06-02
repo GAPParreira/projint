@@ -31,12 +31,12 @@
             this.checkBoxConfirmed = new System.Windows.Forms.CheckBox();
             this.labelDateInitial = new System.Windows.Forms.Label();
             this.labelDateEnd = new System.Windows.Forms.Label();
-            this.labelDias = new System.Windows.Forms.Label();
-            this.labelPagar = new System.Windows.Forms.Label();
             this.iconButtonAlugar = new FontAwesome.Sharp.IconButton();
             this.iconButtonConsultar = new FontAwesome.Sharp.IconButton();
             this.dateTimePickerInicial = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerFinal = new System.Windows.Forms.DateTimePicker();
+            this.labelPagar = new System.Windows.Forms.Label();
+            this.labelDias = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // checkBoxConfirmed
@@ -69,24 +69,6 @@
             this.labelDateEnd.Size = new System.Drawing.Size(91, 21);
             this.labelDateEnd.TabIndex = 1;
             this.labelDateEnd.Text = "Data Final";
-            // 
-            // labelDias
-            // 
-            this.labelDias.AutoSize = true;
-            this.labelDias.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDias.Location = new System.Drawing.Point(45, 191);
-            this.labelDias.Name = "labelDias";
-            this.labelDias.Size = new System.Drawing.Size(0, 21);
-            this.labelDias.TabIndex = 3;
-            // 
-            // labelPagar
-            // 
-            this.labelPagar.AutoSize = true;
-            this.labelPagar.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPagar.Location = new System.Drawing.Point(199, 191);
-            this.labelPagar.Name = "labelPagar";
-            this.labelPagar.Size = new System.Drawing.Size(0, 21);
-            this.labelPagar.TabIndex = 3;
             // 
             // iconButtonAlugar
             // 
@@ -148,18 +130,36 @@
             this.dateTimePickerFinal.Size = new System.Drawing.Size(260, 26);
             this.dateTimePickerFinal.TabIndex = 5;
             // 
+            // labelPagar
+            // 
+            this.labelPagar.AutoSize = true;
+            this.labelPagar.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPagar.Location = new System.Drawing.Point(110, 211);
+            this.labelPagar.Name = "labelPagar";
+            this.labelPagar.Size = new System.Drawing.Size(0, 20);
+            this.labelPagar.TabIndex = 6;
+            // 
+            // labelDias
+            // 
+            this.labelDias.AutoSize = true;
+            this.labelDias.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDias.Location = new System.Drawing.Point(200, 211);
+            this.labelDias.Name = "labelDias";
+            this.labelDias.Size = new System.Drawing.Size(0, 20);
+            this.labelDias.TabIndex = 6;
+            // 
             // ShopForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(493, 448);
+            this.Controls.Add(this.labelDias);
+            this.Controls.Add(this.labelPagar);
             this.Controls.Add(this.dateTimePickerFinal);
             this.Controls.Add(this.dateTimePickerInicial);
             this.Controls.Add(this.iconButtonConsultar);
             this.Controls.Add(this.iconButtonAlugar);
-            this.Controls.Add(this.labelPagar);
-            this.Controls.Add(this.labelDias);
             this.Controls.Add(this.labelDateEnd);
             this.Controls.Add(this.labelDateInitial);
             this.Controls.Add(this.checkBoxConfirmed);
@@ -176,11 +176,11 @@
         private System.Windows.Forms.CheckBox checkBoxConfirmed;
         private System.Windows.Forms.Label labelDateInitial;
         private System.Windows.Forms.Label labelDateEnd;
-        private System.Windows.Forms.Label labelDias;
-        private System.Windows.Forms.Label labelPagar;
         private FontAwesome.Sharp.IconButton iconButtonAlugar;
         private FontAwesome.Sharp.IconButton iconButtonConsultar;
         private System.Windows.Forms.DateTimePicker dateTimePickerInicial;
         private System.Windows.Forms.DateTimePicker dateTimePickerFinal;
+        private System.Windows.Forms.Label labelPagar;
+        private System.Windows.Forms.Label labelDias;
     }
 }

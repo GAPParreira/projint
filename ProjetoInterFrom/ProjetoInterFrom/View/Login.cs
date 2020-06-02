@@ -8,17 +8,17 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoInterFrom.Controller;
+using ProjetoInterFrom.Model;
 using ProjetoInterFrom.View;
 
 namespace ProjetoInterFront
 {
     public partial class Login : Form
     {
+
         int X = 0;
         int Y = 0;
-               
-        string user = "admin";
-        string password = "admin";
 
         public Login()
         {
@@ -57,23 +57,29 @@ namespace ProjetoInterFront
         {
             statusUser.Text = "";
             statusPass.Text = "";
-            if (textBoxUser.Text == user && textBoxPassword.Text == password)
+            LoginController api = new LoginController();
+            LoginMod login = new LoginMod();
+            login = api.GetLogin(textBoxUser.Text);
+
+            if (textBoxUser.Text == login.login && textBoxPassword.Text == login.senha)
             {
+                idToken.id = login.rspId();
+                idToken.id = login.rspNome();
                 Home home = new Home(this);
                 this.Hide();
                 home.Closed += (s, args) => this.Close();
                 home.Show();
             }
-            if (textBoxUser.Text != user)
+            if (textBoxUser.Text != login.login)
             {
                 statusUser.Text = "Usuario não existe!";
             }
             else
             {
                 statusUser.Text = "";
-                if (textBoxUser.Text == user)
+                if (textBoxUser.Text == login.login)
                 {
-                    if (textBoxPassword.Text != password)
+                    if (textBoxPassword.Text != login.senha)
                     {
                         statusPass.Text = "Senha esta incorreta!";
                     }

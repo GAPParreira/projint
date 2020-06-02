@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoInterFrom.Controller
 {
-    class LoginController
+    class AluguelController
     {
         public string baseUrl
         {
@@ -19,7 +19,23 @@ namespace ProjetoInterFrom.Controller
             }
         }
 
-        public LoginMod GetLogin(string nome)
+        public async void PostAluguel(MontarAluguel aluguel)
+        {
+            string action = string.Format("/aluguel");
+
+            string request = (baseUrl + action);
+
+
+            using (HttpClient client = new HttpClient())
+            {
+
+                client.BaseAddress = new Uri(request);
+                var response = await client.PostAsJsonAsync("", aluguel);
+
+            }
+        }
+
+        /*public Aluguel GetAlugueis(string nome)
         {
             string action = string.Format("/usuario/name/{0}", nome);
 
@@ -27,8 +43,8 @@ namespace ProjetoInterFrom.Controller
 
             HttpResponseMessage response = HttpInstance.GetHttpClientInstance().SendAsync(request).Result;
 
-            
-            
+
+
 
             JObject loginJson = JObject.Parse(response.Content.ReadAsStringAsync().Result);
 
@@ -36,10 +52,10 @@ namespace ProjetoInterFrom.Controller
             LoginMod loginList = new LoginMod(pessoas)
             {
                 login = loginJson["login"].ToString(),
-                senha = loginJson["senha"].ToString(),                
-            }; 
-            
+                senha = loginJson["senha"].ToString(),
+            };
+
             return loginList;
-        }
+        }*/
     }
 }

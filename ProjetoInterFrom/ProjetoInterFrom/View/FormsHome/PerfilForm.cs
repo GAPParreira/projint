@@ -14,6 +14,7 @@ using ProjetoInterFrom.Controller;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Http;
 using System.Net.Http.Formatting;
+using ProjetoInterFront;
 
 namespace ProjetoInterFrom.View.FormsHome
 {
@@ -25,14 +26,15 @@ namespace ProjetoInterFrom.View.FormsHome
         {
             InitializeComponent();
             PessoaController api = new PessoaController();
-            var result = api.GetPessoa("11");
+            string id = idToken.id;
+            var result = api.GetPessoa(id);
             Pessoa pessoa = result[0];
 
-            labelNome.Text = pessoa.Nome;
-            labelDtNasc.Text = pessoa.DataNascimento;
-            labelTel.Text = pessoa.Telefone;
-            labelEnd.Text = pessoa.Endereco;
-            labelCPF.Text = pessoa.CPF;
+            labelNome.Text = pessoa.nome;
+            labelDtNasc.Text = pessoa.dateNasc;
+            labelTel.Text = pessoa.telefone;
+            labelEnd.Text = pessoa.endereco;
+            labelCPF.Text = pessoa.cpf;
         }
     }
 }

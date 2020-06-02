@@ -14,12 +14,12 @@ namespace ProjetoInterFrom.Controller
 {
     internal class PessoaController
     {
-        private static HttpClient _httpClient = new HttpClient();
+        
         public string baseUrl
         {
             get
             {
-                return "https://projetov1.herokuapp.com"; 
+                return "https://interbikeshop.herokuapp.com"; 
             }
         }
 
@@ -34,10 +34,12 @@ namespace ProjetoInterFrom.Controller
             List<Pessoa> pessoaList = new List<Pessoa>();
             JObject pessoasJson = JObject.Parse(response.Content.ReadAsStringAsync().Result);
                         
-            pessoaList.Add(new Pessoa() { Nome = pessoasJson["nome"].ToString(), DataNascimento = pessoasJson["data"].ToString(), CPF = pessoasJson["cpf"].ToString(), Endereco = pessoasJson["endereco"].ToString(), Telefone = pessoasJson["telefone"].ToString() });
+            pessoaList.Add(new Pessoa() { nome = pessoasJson["nome"].ToString(), dateNasc = pessoasJson["dateNasc"].ToString(), cpf = pessoasJson["cpf"].ToString(), endereco = pessoasJson["endereco"].ToString(), telefone = pessoasJson["telefone"].ToString() });
             
             return pessoaList;
         }
+
+        
 
         public async void PostPessoa(Pessoa pessoa)
         {

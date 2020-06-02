@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoInterFrom.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,9 @@ namespace ProjetoInterFrom.View.FormsHome
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            HistoricoController api = new HistoricoController();
+            api.GetHistorico("11");
+
             string sourcePath = @"C:\Users\gabri\OneDrive\Documentos\projint\Aluguel.csv";         
             string[] lines = File.ReadAllLines(sourcePath);
 

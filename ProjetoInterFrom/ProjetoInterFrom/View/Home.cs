@@ -96,31 +96,31 @@ namespace ProjetoInterFrom.View
 
         private void iconButtonPrincipal_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RBGColors.color1 );
+            
             OpenChildForm(new PaginaPrincipal());
         }
 
         private void iconButtonPerfil_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RBGColors.color1);
+            
             OpenChildForm(new PerfilForm());
         }
 
         private void iconButtonShop_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RBGColors.color1);
+            
             OpenChildForm(new ShopForm());
         }
 
         private void iconButtonHistorico_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RBGColors.color1);
+            
             OpenChildForm(new HistoricoForm());
         }
 
         private void iconButtonStatus_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RBGColors.color1);
+            
             OpenChildForm(new StatusForm());
         }
 

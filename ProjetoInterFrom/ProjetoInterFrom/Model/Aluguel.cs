@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoInterFrom.Controller;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -8,12 +9,19 @@ using System.Threading.Tasks;
 namespace ProjetoInterFrom.Model
 {
     class Aluguel
-    {
+    {            
         private double precoHour = 2.0;
         public DateTime dtInitial { get; set; }
         public DateTime dtEnd { get; set; }
         public double valor { get; set; }
         public double hrs { get; set; }
+        Bicicleta bicicleta = new Bicicleta();
+        public string multa = "0";
+        public string status = "11";
+        Pessoa pessoa = new Pessoa();
+        MetododePagamento metodo = new MetododePagamento();
+        LoginMod loginm = new LoginMod();
+
 
         public Aluguel()
         {
@@ -31,11 +39,14 @@ namespace ProjetoInterFrom.Model
             hrs = date.TotalHours;
             hrs = Math.Ceiling(hrs);
             valor = hrs * precoHour;
-            string sourcePath = @"C:\Users\gabri\OneDrive\Documentos\projint\Aluguel.csv";           
-            using (StreamWriter sw = File.AppendText(sourcePath))
-            {                
-                    sw.WriteLine(Convert.ToString(dtInitial) + "," +  Convert.ToString(dtEnd) + "," + hrs + "," + valor.ToString("f2"));                
-            }
+            
+
+        }
+
+        public MontarAluguel returnAluguel(string dataini, string datafin)
+        {
+            MontarAluguel aluguel = new MontarAluguel(datafin, datafin);
+            return aluguel;
         }
     }
 }

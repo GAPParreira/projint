@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjetoInterFrom.Controller;
+using ProjetoInterFrom.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,12 @@ namespace ProjetoInterFrom.View
         public FormCreateLogin()
         {
             InitializeComponent();
+            
+        }
+
+        private void buttonCadastro_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

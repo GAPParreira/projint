@@ -141,12 +141,14 @@
             // SemAluguel
             // 
             this.SemAluguel.AutoSize = true;
+            this.SemAluguel.BackColor = System.Drawing.Color.Black;
             this.SemAluguel.Font = new System.Drawing.Font("Franklin Gothic Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SemAluguel.ForeColor = System.Drawing.Color.Crimson;
-            this.SemAluguel.Location = new System.Drawing.Point(133, 103);
+            this.SemAluguel.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.SemAluguel.Location = new System.Drawing.Point(196, 298);
             this.SemAluguel.Name = "SemAluguel";
-            this.SemAluguel.Size = new System.Drawing.Size(0, 30);
+            this.SemAluguel.Size = new System.Drawing.Size(103, 30);
             this.SemAluguel.TabIndex = 2;
+            this.SemAluguel.Text = "ABERTO";
             this.SemAluguel.Click += new System.EventHandler(this.SemAluguel_Click);
             // 
             // label

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.iconButtonIA = new FontAwesome.Sharp.IconButton();
             this.iconButtonLogout = new FontAwesome.Sharp.IconButton();
             this.iconButtonStatus = new FontAwesome.Sharp.IconButton();
             this.iconButtonHistorico = new FontAwesome.Sharp.IconButton();
@@ -56,8 +55,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
-            this.panelMenu.Controls.Add(this.iconButtonIA);
+            this.panelMenu.BackColor = System.Drawing.Color.White;
             this.panelMenu.Controls.Add(this.iconButtonLogout);
             this.panelMenu.Controls.Add(this.iconButtonStatus);
             this.panelMenu.Controls.Add(this.iconButtonHistorico);
@@ -71,31 +69,9 @@
             this.panelMenu.Size = new System.Drawing.Size(220, 611);
             this.panelMenu.TabIndex = 0;
             // 
-            // iconButtonIA
-            // 
-            this.iconButtonIA.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.iconButtonIA.FlatAppearance.BorderSize = 0;
-            this.iconButtonIA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonIA.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.iconButtonIA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonIA.IconChar = FontAwesome.Sharp.IconChar.Brain;
-            this.iconButtonIA.IconColor = System.Drawing.Color.Black;
-            this.iconButtonIA.IconSize = 32;
-            this.iconButtonIA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonIA.Location = new System.Drawing.Point(0, 491);
-            this.iconButtonIA.Name = "iconButtonIA";
-            this.iconButtonIA.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonIA.Rotation = 0D;
-            this.iconButtonIA.Size = new System.Drawing.Size(220, 60);
-            this.iconButtonIA.TabIndex = 7;
-            this.iconButtonIA.Text = "IA";
-            this.iconButtonIA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonIA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonIA.UseVisualStyleBackColor = true;
-            this.iconButtonIA.Click += new System.EventHandler(this.iconButtonIA_Click);
-            // 
             // iconButtonLogout
             // 
+            this.iconButtonLogout.BackColor = System.Drawing.Color.White;
             this.iconButtonLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.iconButtonLogout.FlatAppearance.BorderSize = 0;
             this.iconButtonLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -114,11 +90,12 @@
             this.iconButtonLogout.Text = "Deslogar";
             this.iconButtonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonLogout.UseVisualStyleBackColor = true;
+            this.iconButtonLogout.UseVisualStyleBackColor = false;
             this.iconButtonLogout.Click += new System.EventHandler(this.iconButtonLogout_Click);
             // 
             // iconButtonStatus
             // 
+            this.iconButtonStatus.BackColor = System.Drawing.Color.White;
             this.iconButtonStatus.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonStatus.FlatAppearance.BorderSize = 0;
             this.iconButtonStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -137,11 +114,12 @@
             this.iconButtonStatus.Text = "Status";
             this.iconButtonStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonStatus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonStatus.UseVisualStyleBackColor = true;
+            this.iconButtonStatus.UseVisualStyleBackColor = false;
             this.iconButtonStatus.Click += new System.EventHandler(this.iconButtonStatus_Click);
             // 
             // iconButtonHistorico
             // 
+            this.iconButtonHistorico.BackColor = System.Drawing.Color.White;
             this.iconButtonHistorico.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonHistorico.FlatAppearance.BorderSize = 0;
             this.iconButtonHistorico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -160,11 +138,12 @@
             this.iconButtonHistorico.Text = "Historico";
             this.iconButtonHistorico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonHistorico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonHistorico.UseVisualStyleBackColor = true;
+            this.iconButtonHistorico.UseVisualStyleBackColor = false;
             this.iconButtonHistorico.Click += new System.EventHandler(this.iconButtonHistorico_Click);
             // 
             // iconButtonShop
             // 
+            this.iconButtonShop.BackColor = System.Drawing.Color.White;
             this.iconButtonShop.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonShop.FlatAppearance.BorderSize = 0;
             this.iconButtonShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -183,11 +162,12 @@
             this.iconButtonShop.Text = "Shop";
             this.iconButtonShop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonShop.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonShop.UseVisualStyleBackColor = true;
+            this.iconButtonShop.UseVisualStyleBackColor = false;
             this.iconButtonShop.Click += new System.EventHandler(this.iconButtonShop_Click);
             // 
             // iconButtonPerfil
             // 
+            this.iconButtonPerfil.BackColor = System.Drawing.Color.White;
             this.iconButtonPerfil.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonPerfil.FlatAppearance.BorderSize = 0;
             this.iconButtonPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -206,11 +186,12 @@
             this.iconButtonPerfil.Text = "Perfil";
             this.iconButtonPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonPerfil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonPerfil.UseVisualStyleBackColor = true;
+            this.iconButtonPerfil.UseVisualStyleBackColor = false;
             this.iconButtonPerfil.Click += new System.EventHandler(this.iconButtonPerfil_Click);
             // 
             // iconButtonPrincipal
             // 
+            this.iconButtonPrincipal.BackColor = System.Drawing.Color.White;
             this.iconButtonPrincipal.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonPrincipal.FlatAppearance.BorderSize = 0;
             this.iconButtonPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -229,11 +210,12 @@
             this.iconButtonPrincipal.Text = "Pagina Principal";
             this.iconButtonPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonPrincipal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonPrincipal.UseVisualStyleBackColor = true;
+            this.iconButtonPrincipal.UseVisualStyleBackColor = false;
             this.iconButtonPrincipal.Click += new System.EventHandler(this.iconButtonPrincipal_Click);
             // 
             // panelLogo
             // 
+            this.panelLogo.BackColor = System.Drawing.Color.White;
             this.panelLogo.Controls.Add(this.BntHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -254,7 +236,7 @@
             // 
             // panelTitleBar
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.panelTitleBar.BackColor = System.Drawing.Color.White;
             this.panelTitleBar.Controls.Add(this.bntMinimize);
             this.panelTitleBar.Controls.Add(this.btnMaximize);
             this.panelTitleBar.Controls.Add(this.BntExit);
@@ -331,7 +313,7 @@
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.White;
             this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Black;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.Black;
@@ -343,7 +325,7 @@
             // 
             // panelShadow
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(45)))));
+            this.panelShadow.BackColor = System.Drawing.Color.White;
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelShadow.Location = new System.Drawing.Point(220, 80);
             this.panelShadow.Name = "panelShadow";
@@ -352,14 +334,14 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(108)))), ((int)(((byte)(60)))));
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 89);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(939, 522);
             this.panelDesktop.TabIndex = 3;
             // 
-            // Home2
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -371,7 +353,7 @@
             this.Controls.Add(this.panelMenu);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Home2";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home2";
             this.panelMenu.ResumeLayout(false);
@@ -393,7 +375,6 @@
         private FontAwesome.Sharp.IconButton iconButtonHistorico;
         private FontAwesome.Sharp.IconButton iconButtonShop;
         private FontAwesome.Sharp.IconButton iconButtonPerfil;
-        private FontAwesome.Sharp.IconButton iconButtonIA;
         private FontAwesome.Sharp.IconButton iconButtonLogout;
         private System.Windows.Forms.PictureBox BntHome;
         private System.Windows.Forms.Panel panelTitleBar;

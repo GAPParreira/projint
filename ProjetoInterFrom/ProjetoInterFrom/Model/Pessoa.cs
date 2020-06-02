@@ -2,24 +2,35 @@
 namespace ProjetoInterFrom.Model
 {
     class Pessoa
-    {        
-        public string CPF { get; set; }
-        public string DataNascimento { get; set; }
-        public string Endereco { get; set; }
-        public string Nome { get; set; }
-        public string Telefone { get; set; }
+    {   
+        public string id { get; set; }
+        public string cpf { get; set; }
+        public string dateNasc { get; set; }
+        public string endereco { get; set; }
+        public string nome { get; set; }
+        public string telefone { get; set; }
 
         public Pessoa()
         {
         }
 
-        public Pessoa(string cPF, string dataNascimento, string endereco, string nome, string telefone)
-        {            
-            CPF = cPF;
-            DataNascimento = dataNascimento;
-            Endereco = endereco;
-            Nome = nome;
-            Telefone = telefone;
+        public Pessoa(string cpf, string dateNasc, string endereco, string nome, string telefone)
+        {
+            this.cpf = cpf;
+            this.dateNasc = dateNasc;
+            this.endereco = endereco;
+            this.nome = nome;
+            this.telefone = telefone;
+        }
+
+        public Pessoa(string id, string cpf, string dateNasc, string endereco, string nome, string telefone)
+        {
+            this.id = id;
+            this.cpf = cpf;
+            this.dateNasc = dateNasc;
+            this.endereco = endereco;
+            this.nome = nome;
+            this.telefone = telefone;
         }
     }
 }
